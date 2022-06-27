@@ -10,6 +10,9 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 @StreamBot.on_message(filters.command(["start", "help"]))
 async def start(_, m: Message):
     await m.reply(
-        text="A Simple Telegram File To Link Generation Bot."
-             (reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton('LiquidX', url=f"https://t.me/liquidxprojects"))
- )
+        text="""
+A Simple Telegram File To Link Generation Bot.""",
+            parse_mode="HTML",
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton('LiquidX Projects', url=f"https://t.me/liquidxprojects"),
+                                                                                       InlineKeyboardButton('Follow ', url='https://github.com/adarsh-goel') ] ]  ) ) )
