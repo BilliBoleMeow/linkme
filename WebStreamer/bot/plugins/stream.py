@@ -39,7 +39,7 @@ async def media_receive_handler(_, m: Message):
         # dkabl
         rm = None
     await m.reply_text(
-        text="(<a href='https://t.me/liquidxprojects'>[ LiquidX Projects ]</a>)\n\n                                      (<a href='{}'><b>Download Link</b></a>)".format(
+        text="(<a href='https://telegram.dog/liquidxprojects'> LiquidX Projects </a>)\n\n                                      (<a href='{}'><b>Download Link</b></a>)".format(
                      short_link
         ),
         quote=True,
