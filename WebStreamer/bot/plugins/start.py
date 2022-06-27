@@ -15,4 +15,4 @@ A Simple Telegram File To Link Generation Bot.""",
             parse_mode="HTML",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton('LiquidX Projects', url=f"https://t.me/liquidxprojects"),
-                                                                                       InlineKeyboardButton('Follow ', url='https://github.com/adarsh-goel') ] ]  ) ) )
+                                                                                       InlineKeyboardButton('Follow ', url='https://github.com/adarsh-goel') ] ]  ))
