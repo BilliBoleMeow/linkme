@@ -34,7 +34,7 @@ async def media_receive_handler(_, m: Message):
     logging.info(f"Generated link: {stream_link} for {m.from_user.first_name}")
     rm = InlineKeyboardMarkup(
         [[InlineKeyboardButton("Download Now", url=stream_link)],
-             [InlineKeyboardButton('LiquidX', url=f"https://t.me/liquidxprojects")]]
+             [InlineKeyboardButton('Check More Cool Bots', url=f"https://t.me/liquidxprojects")]]
     )
     if Var.FQDN == Var.BIND_ADDRESS:
         # dkabl
