@@ -9,7 +9,7 @@ from WebStreamer.bot import StreamBot
 @StreamBot.on_message(filters.command(["start", "help"]))
 async def start(_, m: Message):
     await m.reply(
-        text="(<a href='https://telegram.dog/liquidxprojects'> LiquidX Projects </a>)\n),
+        text="(<a href='@liquidxprojects'> LiquidX Projects </a>)\n),
          quote=True,
          parse_mode=ParseMode.HTML"
  )
