@@ -9,5 +9,5 @@ from WebStreamer.bot import StreamBot
 @StreamBot.on_message(filters.command(["start", "help"]))
 async def start(_, m: Message):
     await m.reply(
-        f'Hi {m.from_user.mention(style="md")}, Send me a file to get an instant stream/download link.\nThis Bot Is Part Of <a href='https://t.me/liquidxprojects'>[ LiquidX Projects ]</a>'
+        f'Hi {m.from_user.mention(style="md")}, Send me a file to get an instant stream/download link.\nThis Bot Is Part Of LiquidX Project's '
     )
