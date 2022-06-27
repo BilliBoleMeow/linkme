@@ -14,4 +14,4 @@ async def start(_, m: Message):
 <b>A Simple Telegram File To Link Generation Bot.</b>\n.                           <b>Maintained By 👇</b>""",
             parse_mode=ParseMode.HTML,
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton('LiquidX Projects', url=f"https://t.me/liquidxprojects")] ]  ))
+            reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton('LiquidX', url=f"https://t.me/liquidxprojects")] ]  ))
