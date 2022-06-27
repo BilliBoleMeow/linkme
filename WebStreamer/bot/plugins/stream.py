@@ -33,7 +33,7 @@ async def media_receive_handler(_, m: Message):
     short_link = f"{Var.URL}{get_hash(log_msg)}{log_msg.id}"
     logging.info(f"Generated link: {stream_link} for {m.from_user.first_name}")
     rm = InlineKeyboardMarkup(
-        [[InlineKeyboardButton("Download Now", url=stream_link),\n
+        [[InlineKeyboardButton("Download Now", url=stream_link),
              InlineKeyboardButton('LiquidX', url=f"https://t.me/liquidxprojects")]]
     )
     if Var.FQDN == Var.BIND_ADDRESS:
