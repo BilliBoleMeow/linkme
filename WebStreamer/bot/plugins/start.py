@@ -11,7 +11,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 async def start(_, m: Message):
     await m.reply(
         text="""
-A Simple Telegram File To Link Generation Bot.\n.                           Maintained By 👇""",
+<b>A Simple Telegram File To Link Generation Bot.</b>\n.                           <b>Maintained By 👇</b>""",
             parse_mode=ParseMode.HTML,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton('LiquidX Projects', url=f"https://t.me/liquidxprojects")] ]  ))
