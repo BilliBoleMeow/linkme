@@ -33,14 +33,14 @@ async def media_receive_handler(_, m: Message):
     short_link = f"{Var.URL}{get_hash(log_msg)}{log_msg.id}"
     logging.info(f"Generated link: {stream_link} for {m.from_user.first_name}")
     rm = InlineKeyboardMarkup(
-        [[InlineKeyboardButton("Download Now", url=stream_link),
+        [[InlineKeyboardButton("Download Now", url=stream_link)\n,
              InlineKeyboardButton('LiquidX', url=f"https://t.me/liquidxprojects")]]
     )
     if Var.FQDN == Var.BIND_ADDRESS:
         # dkabl
         rm = None
     await m.reply_text(
-        text="(<a href='https://telegram.dog/liquidxprojects'> LiquidX Projects </a>)\n\n                                      (<a href='{}'><b>Download Link</b></a>)".format(
+        text="(Copy The Download Link Or Tap On Download Now Button.\n\n                                      (<a href='{}'><b>Download Link</b></a>)".format(
                      short_link
         ),
         quote=True,
