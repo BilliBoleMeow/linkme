@@ -45,4 +45,4 @@ async def media_receive_handler(_, m: Message):
         quote=True,
         parse_mode=ParseMode.HTML,
         reply_markup=rm,
-    )\n
+    )
